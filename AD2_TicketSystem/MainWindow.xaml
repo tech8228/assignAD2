@@ -1,0 +1,27 @@
+﻿<Window x:Class="AD2_TicketSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AD2_TicketSystem"
+        mc:Ignorable="d"
+               WindowStartupLocation="CenterScreen"
+        Title="Main Ticketing Window" Height="500" Width="800">
+    <Grid>
+
+
+
+        <StackPanel VerticalAlignment="Top" Height="320" Margin="10,57,16,0">
+
+            <DataGrid x:Name="DgTickets"  Width="732" Height="252" AutoGenerateColumns="True" />
+
+            <Button x:Name="BtnFrmRefresh" Content="Refresh" Margin="10,20,10,0" Background="LightBlue"  Width="281" Click="BtnFrmRefresh_Click" />
+
+
+        </StackPanel>
+
+        <Button x:Name="BtnAddTicket" Content="Create Ticket" Background="LightBlue" HorizontalAlignment="Left" Margin="340,20,0,0" VerticalAlignment="Top" Width="100" Click="BtnAddCourse_Click"/>
+
+        <!-- <ListView x:Name="LsvCourseView" HorizontalAlignment="Left" Height="250" Margin="395,57,0,0" VerticalAlignment="Top" Width="108"/> -->
+    </Grid>
+</Window>
